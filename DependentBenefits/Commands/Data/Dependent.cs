@@ -1,17 +1,16 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DependentBenefits.Commands.Models
+namespace DependentBenefits.Commands.Data
 {
-    public class Dependent : IRequest
+    public class Dependent
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public decimal Relationship { get; set; }
+        public string Relationship { get; set; }
         public int EmployeeId { get; set; }
     }
 }

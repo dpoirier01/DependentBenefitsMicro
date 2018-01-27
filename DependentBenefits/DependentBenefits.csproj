@@ -21,6 +21,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.0.0" />
     <PackageReference Include="Nancy" Version="2.0.0-barneyrubble" />
+    <PackageReference Include="NUnitLite" Version="3.9.0" />
   </ItemGroup>
 
 </Project>

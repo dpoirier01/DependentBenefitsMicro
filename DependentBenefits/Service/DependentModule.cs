@@ -15,14 +15,14 @@ namespace DependentBenefits.Service
 
             Post("/enroll", args =>
             {
-                var dependentModel = this.Bind<Dependent>();
+                var dependentModel = this.Bind<AddNewDependent>();
                 SaveNewDependent(dependentModel);
                 return "Success";
             });
         }
 
 
-        public void SaveNewDependent(Dependent employee)
+        public void SaveNewDependent(AddNewDependent employee)
         {
             _mediator.Send(employee);
         }

@@ -57,7 +57,7 @@ namespace DependentBenefits
 
             services.AddMediatR(typeof(Startup).GetTypeInfo().Assembly);
 
-            services.AddDbContext<DependentWriteContext>();
+            services.AddDbContext<DependentContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

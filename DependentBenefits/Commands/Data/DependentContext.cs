@@ -4,16 +4,16 @@ using Microsoft.Extensions.Configuration;
 
 namespace DependentBenefits.Commands.Data
 {
-    public class DependentWriteContext : DbContext
+    public class DependentContext : DbContext
     {
         private IConfigurationRoot _config;
 
-        public DependentWriteContext(IConfigurationRoot config, DbContextOptions options) : base(options)
+        public DependentContext(IConfigurationRoot config, DbContextOptions options) : base(options)
         {
             _config = config;
         }
 
-        public DbSet<Dependent> Employee { get; set; }
+        public DbSet<Dependent> Dependent { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
